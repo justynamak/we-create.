@@ -3,7 +3,8 @@
   <li>HTML5</li>
   <li>CSS3</li>
   <li>SASS</li>
-  <li>BEM</li>  
+  <li>BEM</li> 
+  <li>Java Script</li> 
 </ul>
 
 <a href="https://justynamak.github.io/we-create./">DEMO</a>
