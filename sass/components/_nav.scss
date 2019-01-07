@@ -1,21 +1,59 @@
 .nav{
     position: absolute;
     top:0;
+    width: 100%;
+    
+    @media #{$media-size-medium}{
+        position: fixed;
+        
+    }
+    
+    &__icon{
+        color: $color-violet; 
+        position: fixed;
+        left: 0;
+        padding: 1%;
+        display: none;
+        
+        @media #{$media-size-medium}{
+            display: block;
+        }
+      
+    }
 
     &__list{
         display: flex;
+        justify-content: center;     
+       
+        
+        @media #{$media-size-medium}{
+            display: none;
+            height: 100vh;
+            background: rgba(255, 255, 255, 0.85);            
+        }
+         &--show{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
     }
     
 
         &__item{        
-            padding: 1em 1.25em 1em 0;    
-        }
-
-        &__link{
+            padding: 2% 5% 2% 0;
             text-transform:uppercase;
             font-size: 0.9em;
-            color: $color-violet;            
             letter-spacing: 0.0625em;
             font-family: $secondary-font-family;
+            
+            @media #{$media-size-medium}{
+                display: block;
+                
+            }
+        }
+
+        &__link{            
+            color: $color-violet;        
+            
         }
     }

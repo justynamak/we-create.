@@ -65,12 +65,14 @@
         width: 50%;
         height: 50%;
         margin-top:5%;
+        z-index: -1;
         
         @media #{$media-size-medium}{
             width:70%;
             position: relative;
             left: 30%;
             margin-top: 0;
+            
         }
         @media #{$media-size-small}{
             width: 100%;
@@ -96,6 +98,7 @@
     background-size: cover;
     position:relative;
     font-family: $secondary-font-family;
+    z-index: -1;
     
     &__title{        
         position: absolute;
@@ -117,8 +120,9 @@
         left: 0;
         width:50%;
         
+        
         @media #{$media-size-medium}{
-            display: none;
+            display: none;            
         }
     }
 }

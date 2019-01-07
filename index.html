@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>We create.</title>
-    <link rel="stylesheet" href="css/main.css">
+    <title>We create.</title>    
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">    
 </head>
 <body>
    <header class="header">       
-        <nav class="nav">            
+        <nav class="nav"> 
+            <a href="#" class="nav__icon">
+               <i class="fas fa-bars fa-2x"></i>
+            </a>           
             <ul class="nav__list">
-               <li class="nav__item"><a class="nav__link" href="#">projects</a></li>
-               <li class="nav__item"><a class="nav__link" href="#">team</a></li>
-               <li class="nav__item"><a class="nav__link" href="#">mission</a></li>
-               <li class="nav__item"><a class="nav__link" href="#">contact</a></li>
+               <li class="nav__item"><a class="nav__link" href="#projects">projects</a></li>
+               <li class="nav__item"><a class="nav__link" href="#culture">company's culture</a></li>
+               <li class="nav__item"><a class="nav__link" href="#ideas">our crazy ideas</a></li>
+               <li class="nav__item"><a class="nav__link" href="#experience">experience</a></li>             
+               <li class="nav__item"><a class="nav__link" href="#contact">contact</a></li>
             </ul>
         </nav>         
         <h1 class="header__title">we create.</h1>
@@ -29,7 +34,7 @@
    </header>    
        <main>
            <div class="container">
-               <article class="article">       
+               <article class="article" id="projects">       
                             <div class="article__text article__number1">
                                   <h2 class="article__title">projects</h2>
                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque velit incidunt, iure, dolores eaque, non maxime quibusdam sequi ad totam accusamus deserunt voluptate eius aperiam asperiores quidem architecto quis explicabo deleniti nisi numquam et nulla at. Aperiam fugiat deserunt, asperiores sed labore harum eius doloremque a tempore ad dicta odit maxime, inventore. Voluptate, a.</p>
@@ -38,7 +43,7 @@
                         <img class="article__img" src="./wecreate-assets/img/img1.jpg" alt="paint">             
                </article>
                
-               <article class="article article--reverse">                  
+               <article class="article article--reverse" id="culture">                  
                   <div class="article__text article__text--reverse article__number2">              
                           <h3 class="article__title">company's culture</h3>
                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ex officia in perspiciatis voluptatem illum est recusandae voluptatibus tenetur, explicabo, voluptas, deserunt eveniet iure nam! Culpa repudiandae quibusdam ipsum eos ab temporibus sunt animi eaque doloribus officiis iste cupiditate quae consectetur minus quod, dicta suscipit quas inventore dignissimos maxime. Mollitia asperiores pariatur laboriosam delectus id dolores quam, ab beatae ipsam.</p>
@@ -49,12 +54,12 @@
                </article>
            </div>
            
-            <div class="our-ideas">               
+            <div class="our-ideas" id="ideas">               
                    <h3 class="our-ideas__title"><a href="#" class="our-ideas__link">our crazy ideas</a></h3>
                    <img class="our-ideas__img" src="./wecreate-assets/img/wave-bottom.svg" alt="wave">
             </div>
            
-               <article class="article container">
+               <article class="article container" id="experience">
                   <div class="article__text article__number3">
                            <h3 class="article__title">experience</h3>
                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam iusto quis culpa laborum cum suscipit similique nobis ipsam porro saepe amet adipisci aliquid dolorum expedita fugiat odio, excepturi odit illum voluptatibus quaerat rerum minima! Suscipit tenetur quos magni distinctio illum ratione ipsum voluptatem consequuntur nam quod in, iure repellat atque, optio similique reiciendis fugit quas sapiente reprehenderit. Ipsam rem quaerat autem! Voluptates quae magni tenetur ipsa. Maiores in velit esse..</p>
@@ -65,7 +70,7 @@
            </main>   
    
         <div class="bg-gradient">
-            <section class="contact container">           
+            <section class="contact container" id="contact">       
                 <h2 class="contact__title">say hello to our team</h2>
                 <form class="form contact__form" action="get" name="myForm">          
             
@@ -86,6 +91,6 @@
                 <p>created by awwwesomes in 2017</p>
             </footer>
         </div>
-      
+<script src="js/scripts.js"></script>   
 </body>
 </html>

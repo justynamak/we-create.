@@ -20,7 +20,11 @@
     &__title{
         font-size:6em;
         font-family: $secondary-font-family;
-        line-height: 1;        
+        line-height: 1; 
+        
+        @media #{$media-size-small}{
+            font-size: 4.5em;
+        }
     }
     &__subtitle{
         font-size:1.3125em;
